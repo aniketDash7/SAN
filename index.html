@@ -34,10 +34,45 @@
             </div>
             </div>
             
+            <div class="toggler">
+                VC
+            </div>
+
+            
         </div>
     </div>
 
-        
+<script>
+
+    let background = document.querySelector('#particles-js');
+    let toggler = document.querySelector('.toggler');
+    let checker = false;
+    let neomorphic = document.querySelectorAll('.neomorphic');
+    toggler.addEventListener('click',function(){
+        if(checker === false){
+            neomorphic.forEach(i => {
+                i.style.background = 'rgb(254, 197, 187)';
+                i.style.boxShadow = "-4px -4px 15px rgb(254,186,175),4px 4px 15px rgb(253,169,155)";
+            });
+            background.style.backgroundColor = '#fec5bb';
+            toggler.style.background = 'white';
+            toggler.style.color = 'black';
+            checker = true;
+        }else{
+            neomorphic.forEach(i => {
+                i.style.background = '#F0F0F5';
+                i.style.boxShadow = "-4px -4px 15px rgb(231,231,229),4px 4px 15px rgb(218,218,231)";
+
+            });
+            background.style.backgroundColor = 'rgb(240,240,245)';
+            toggler.style.background = 'black';
+            toggler.style.color = 'white';
+            checker = false;
+        }
+    });
+
+
+</script>
 <script type="text/javascript" src="particles.js"></script>
 <script type="text/javascript" src="app.js"></script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
