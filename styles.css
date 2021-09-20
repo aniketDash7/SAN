@@ -26,6 +26,30 @@
         overflow: hidden;
       
     }
+
+    .toggler{
+
+        width:2rem;
+        height:2rem;
+        border-radius: 50%;
+        background-color: #171717;
+        position: absolute;
+        top:1rem;
+        right:5rem;
+        color:#ececec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:all 0.2s;
+
+    }
+
+    .toggler:hover{
+
+        border-radius:25%;
+
+    }
+
     .intro{
         position: absolute;
         top:5rem;
@@ -46,11 +70,10 @@
 
     }
     .neomorphic{
-      background: rgb(240,240,245);
-      box-shadow: -5px -5px 20px rgb(254,254,255),
-                   2px 2px 20px rgb(200,200,220)
-                  /*-5px -5px 5px rgb(250,250,250) inset,
-                   5px 5px 5px rgb(230,230,230) inset*/;
+
+      background:rgb(240,240,245);
+      box-shadow: -5px -5px 20px rgb(231,231,229),
+                   2px 2px 20px rgb(218,218,231);
     } 
     
     .container {
@@ -80,12 +103,11 @@
 
     .btn-container {
 
-            background: rgb(240,240,245);
+            background:rgb(240,240,245);
             border-radius: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
-
             width: 450px;
             height: 120px;
       
@@ -93,7 +115,7 @@
     
     .btn {
 
-        background: rgb(240,240,245);
+        background:rgb(240,240,245);
         margin:20px;
         width: 60px;
         height: 60px;
@@ -101,8 +123,7 @@
         justify-content: center;
         align-items: center;
         /*border: 5px solid rgb(250,250,250);*/
-        box-shadow: -4px -4px 15px rgb(254,254,255),
-                    4px 4px 15px rgb(200,200,220);
+        box-shadow: -4px -4px 15px rgb(231,231,229),4px 4px 15px rgb(218,218,231);
         border-radius: 10px;
         transition: 0.6s ease-in-out;
         outline:none;
